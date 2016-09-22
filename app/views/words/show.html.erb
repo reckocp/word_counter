@@ -1,7 +1,49 @@
-<h3><%= @word.sentence %></h3>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <h3><%= @word.sentence %></h3>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
 
-<p>Number of words: <%= @word.word_count %></p>
-<p>Number of characters: <%= @word.char_count %></p>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <p>Number of sentences: <%= @word.sentence_count %></p>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
 
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <p>Number of words: <%= @word.word_count %></p>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
 
-<%= link_to "Home", root_path %>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <p>Number of characters: <%= @word.char_count %></p>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <p>Number of nouns: <%= @word.noun_count %></p>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <%= link_to "Home", root_path %>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>

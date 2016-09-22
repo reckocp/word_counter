@@ -37,8 +37,13 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    autoprefixer-rails (6.4.1.1)
+      execjs
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap (4.0.0.alpha4)
+      autoprefixer-rails (>= 6.0.3)
+      sass (>= 3.4.19)
     builder (3.2.2)
     byebug (9.0.5)
     coffee-rails (4.1.1)
@@ -50,6 +55,7 @@ GEM
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
+    engtagger (0.1.2)
     erubis (2.7.0)
     execjs (2.7.0)
     globalid (0.3.7)
@@ -104,7 +110,7 @@ GEM
       activesupport (= 4.2.6)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (11.2.2)
+    rake (11.3.0)
     rdoc (4.2.2)
       json (~> 1.4)
     sass (3.4.22)
@@ -146,8 +152,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap (~> 4.0.0.alpha4)
   byebug
   coffee-rails (~> 4.1.0)
+  engtagger (~> 0.1.1)
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.6)
@@ -160,4 +168,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.12.5
+   1.13.1

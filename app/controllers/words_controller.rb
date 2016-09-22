@@ -1,7 +1,7 @@
 class WordsController < ApplicationController
   def index
     # @words = Word.find(:all, :order => "id desc", :limit => 5).reverse
-    @words = Word.all
+    @words = Word.order("created_at desc").limit(5)
   end
 
   def show
