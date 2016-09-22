@@ -1,4 +1,18 @@
 <h1>Welcome to Word Counter</h1>
 <p>I will analyze any sentence you got!</p>
 
-<%= link_to "Type your word here!", new_word_path %>
+<%= form_for [Word.new] do |f| %>
+  <p>Sentence: <%= f.text_field :sentence %></p>
+  <p><%= f.submit "Let's check it out!" %></p>
+<% end %>
+
+<h3>Previous words:</h3>
+<% if Word.exists? %>
+  <ul>
+  <% @words.each do |word| %>
+   <a><li><%= link_to word.sentence, word %></li></p>
+  <% end %>
+  </ul>
+<% else %>
+  <p>There are none.</p>
+<% end %>
