@@ -1,5 +1,5 @@
 Hello.
-<%= form_for [Word.new] do |f| %>
+<%= simple_form_for [Word.new] do |f| %>
   <p>Sentence: <%= f.text_field :sentence %></p>
   <p><%= f.submit "Let's check it out!" %></p>
 <% end %>

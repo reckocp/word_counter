@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'engtagger', '~> 0.1.1'
 
 gem 'bootstrap', '~> 4.0.0.alpha4'
+gem 'simple_form'
 
 
 # Use ActiveModel has_secure_password
