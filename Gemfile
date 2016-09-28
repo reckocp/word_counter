@@ -28,6 +28,7 @@ gem 'engtagger', '~> 0.1.1'
 gem 'bootstrap', '~> 4.0.0.alpha4'
 gem 'simple_form'
 
+gem 'react-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -1,4 +1,17 @@
-<div class="container">
+<%= react_component 'Word', {
+  word: @word,
+  sentenceCount: @word.sentence_count,
+  wordCount: @word.word_count,
+  charCount: @word.char_count,
+  nounCount: @word.noun_count,
+  verbCount: @word.verb_count,
+  adjCount: @word.adj_count,
+  detCount: @word.det_count,
+  punctCount: @word.punct_count,
+  mostCommonCharCount: @word.most_common_char
+} %>
+
+<!-- <div class="container">
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
@@ -87,4 +100,4 @@
     </div>
     <div class="col-md-4"></div>
   </div>
-</div>
+</div> -->
